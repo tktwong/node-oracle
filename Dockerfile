@@ -3,7 +3,7 @@ FROM node:13.12.0
 RUN apt-get update && \
   apt-get install sudo
 
-RUN sudo apt-get install unzip curl libaio1
+RUN sudo apt-get install libaio1
 
 RUN mkdir -p /opt/oracle
 WORKDIR /opt/oracle
