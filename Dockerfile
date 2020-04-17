@@ -13,6 +13,7 @@ RUN sudo unzip instantclient.zip
 
 RUN sudo sh -c "echo /opt/oracle/instantclient_19_6 > /etc/ld.so.conf.d/oracle-instantclient.conf"
 RUN sudo cat /etc/ld.so.conf.d/oracle-instantclient.conf
+RUN sudo apt-get install libaio1
 
 # Clean everything
 RUN rm *.zip \
